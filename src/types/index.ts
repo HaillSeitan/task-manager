@@ -6,4 +6,9 @@ export interface Task {
 
 export interface TaskListProps {
   tasks: Task[];
+  onToggle: (id: string) => void;
+}
+
+export interface TaskFormProps {
+  onAddTask: (title: string) => void;
 }
