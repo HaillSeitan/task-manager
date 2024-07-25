@@ -15,18 +15,23 @@ const TaskForm = ({ onAddTask }: TaskFormProps) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={title}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setTitle(e.target.value)
-        }
-        placeholder="Enter new Task"
-        className="border p-2 mr-2 rounded-md"
-      />
-      <button type="submit" className="bg-cyan-700 text-white p-2 rounded">
-        Add Task
-      </button>
+      <div className="flex w-full">
+        <input
+          type="text"
+          value={title}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setTitle(e.target.value)
+          }
+          placeholder="Enter new Task"
+          className="border p-2 rounded-l-md"
+        />
+        <button
+          type="submit"
+          className="bg-blue-500 text-white p-2 rounded-r-lg"
+        >
+          Add Task
+        </button>
+      </div>
     </form>
   );
 };
