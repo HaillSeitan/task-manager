@@ -3,7 +3,7 @@ import { FilterStatus, TaskFilterProps } from "../types";
 const TaskFilter = ({ currentFilter, onFilterChange }: TaskFilterProps) => {
   return (
     <div className="mb-4">
-      <span className="mr-2">Filter:</span>
+      <span className="mr-2"></span>
       {(["all", "active", "completed"] as FilterStatus[]).map((filter) => (
         <button
           key={filter}
