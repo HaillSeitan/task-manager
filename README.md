@@ -1,13 +1,12 @@
-# task-manager
- Task Manager I created using TS, React and Tailwind
+#Task Manager
+A Task Manager I created using TypeScript, React, and Tailwind.
 
-Implemented Functionalities:
- + adding tasks
- + delete tasks
- + edit tasks
- + filter component
-
-to Improve:
- - responsivness
- - deadline for tasks
- - gouping tasks in categories
+Implemented Features:
+ + Adding tasks
+ + Deleting tasks
+ + Editing tasks
+ + Filter component
+Areas for Improvement:
+ + Responsiveness
+ + Deadlines for tasks
+ + Grouping tasks into categories
