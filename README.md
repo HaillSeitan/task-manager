@@ -6,6 +6,7 @@ Implemented Features:
  + Deleting tasks
  + Editing tasks
  + Filter component
+
 Areas for Improvement:
  + Responsiveness
  + Deadlines for tasks
