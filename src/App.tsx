@@ -53,16 +53,18 @@ const App = () => {
   }, [tasks, filter]);
 
   return (
-    <div className="container mx-auto p-4 flex flex-col gap-4 h-full w-3/4 items-center">
-      <h1 className="text-3xl font-bold mb-4">Task Manager</h1>
-      <TaskForm onAddTask={addTask} />
-      <TaskFilter currentFilter={filter} onFilterChange={setFilter} />
-      <TaskList
-        tasks={filteredTasks}
-        onToggle={toggleTask}
-        onDelete={deleteTask}
-        onEdit={editTask}
-      />
+    <div className="min-h-screen flex items-center bg-zinc-300 relative">
+      <div className="container mx-auto p-4 flex flex-col gap-4 h-full w-3/4 items-center">
+        <h1 className="text-3xl font-bold mb-4">Task Manager</h1>
+        <TaskFilter currentFilter={filter} onFilterChange={setFilter} />
+        <TaskList
+          tasks={filteredTasks}
+          onToggle={toggleTask}
+          onDelete={deleteTask}
+          onEdit={editTask}
+        />
+        <TaskForm onAddTask={addTask} />
+      </div>
     </div>
   );
 };
