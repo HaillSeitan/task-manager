@@ -35,11 +35,11 @@ const TaskList = ({ tasks, onToggle, onDelete, onEdit }: TaskListProps) => {
 
   return (
     <>
-      <ul className="space-y-2 w-1/2">
+      <ul className="space-y-2 w-full">
         {tasks.map((task) => (
           <li
             key={task.id}
-            className="flex justify-between items-center bg-gray-100 p-4 rounded-full"
+            className="flex justify-between items-center bg-gray-100 p-4 rounded-full text-sm md:text-base overflow-hidden"
           >
             <Checkbox
               checked={task.completed}

@@ -53,8 +53,8 @@ const App = () => {
   }, [tasks, filter]);
 
   return (
-    <div className="min-h-screen flex items-center bg-zinc-300 relative">
-      <div className="container mx-auto p-4 flex flex-col gap-4 h-full w-3/4 items-center">
+    <div className="min-h-screen items-center bg-zinc-300 relative">
+      <div className="container mx-auto p-4 flex flex-col gap-4 h-full w-full sm:w-3/4 items-center">
         <h1 className="text-3xl font-bold mb-4">Task Manager</h1>
         <TaskFilter currentFilter={filter} onFilterChange={setFilter} />
         <TaskList
